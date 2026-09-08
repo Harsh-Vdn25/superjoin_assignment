@@ -1,0 +1,32 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "npm run build && node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.2.0",
+    "@types/p-limit": "^2.1.0",
+    "@types/p-retry": "^3.0.0",
+    "@types/pg": "^8.23.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.3.0",
+    "p-limit": "^7.3.2",
+    "p-retry": "^8.0.1",
+    "pdf-to-img": "^7.0.0",
+    "pg": "^8.23.0",
+    "zod": "^4.5.4"
+  }
+}
