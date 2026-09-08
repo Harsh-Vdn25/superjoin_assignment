@@ -6,12 +6,19 @@ import * as chunksRepo from "../db/chunks.repo";
 import * as factsRepo from "../db/facts.repo";
 import { extractPages, groupIntoChunks } from "./pdfExtractor";
 import { extractFactsFromChunk } from "./extraction";
-import { QuotaExhaustedError } from "./geminiErrors";
-import { embedText } from "./embeddings";
+import { QuotaExhaustedError, isOverloadedError } from "./geminiErrors";
+import { FALLBACK_EXTRACTION_MODEL } from "./geminiClient";
+import { embedTextsBatch } from "./embeddings";
 import { broadcast, closeConnections } from "../sse/connections";
 
 const CONCURRENCY = 1; // free-tier RPM is too low to run calls in parallel
-const PAGES_PER_CHUNK = 1; // smaller chunks = fewer tokens per request
+// Bundling more pages per request cuts total request count, which is what
+// actually matters on free tier (5 RPM primary model) — 1M token context
+// gives plenty of headroom, so token size isn't the binding constraint here.
+// 100 pages at 1/chunk = 100 requests (~25+ min minimum); at 5/chunk = ~20
+// requests (~5 min minimum). Tune down if a single chunk's output starts
+// getting truncated (check maxOutputTokens below).
+const PAGES_PER_CHUNK = 5;
 // Confirmed via a live 429 error: this project's free-tier limit for
 // gemini-3.6-flash is 5 requests/minute. 60s / 5 = 12s minimum; add a
 // buffer since limits aren't guaranteed exact (see Google's rate-limits
@@ -28,7 +35,7 @@ const MIN_INTERVAL_MS = 13000;
  * This throttle enforces a minimum gap between call starts, independent of
  * concurrency, so we stay under Gemini's ~10-15 RPM free-tier ceiling.
  */
-function createThrottle(minIntervalMs: number):()=>Promise<void> {
+function createThrottle(minIntervalMs: number) {
   let nextAvailable = Date.now();
   return async function throttle(): Promise<void> {
     const now = Date.now();
@@ -90,7 +97,7 @@ export async function processDocument(documentId: string, filePath: string): Pro
                 } catch (err) {
                   if (err instanceof QuotaExhaustedError) {
                     quotaExhausted = true;
-                    // @ts-expect-error -- pRetry's inferred bail type is incorrect here
+                    //@ts-expect-error
                     bail(err); // stop retrying immediately — more attempts won't help
                     throw err;
                   }
@@ -101,10 +108,9 @@ export async function processDocument(documentId: string, filePath: string): Pro
                 retries: 4,
                 minTimeout: 2000, // start at 2s, doubling each retry — 503s from
                 factor: 2, // "high demand" often need 10s+ to clear, not 1s
-                onFailedAttempt: (err) =>
+                onFailedAttempt: (err:any) =>
                   console.warn(
-                    //@ts-ignore
-                    `Extraction attempt ${err.attemptNumber} failed for chunk ${chunk.chunkIndex} (doc ${documentId}): ${err.message }`
+                    `Extraction attempt ${err.attemptNumber} failed for chunk ${chunk.chunkIndex} (doc ${documentId}): ${err.message}`
                   ),
               }
             ).catch((err) => ({
@@ -113,6 +119,22 @@ export async function processDocument(documentId: string, filePath: string): Pro
                 ? `Gemini daily quota exhausted: ${String(err)}`
                 : `All retries exhausted: ${String(err)}`,
             }));
+
+            // Primary model is overloaded (503), not just slow — a
+            // different model has a separate capacity pool, so try it once
+            // before marking this chunk a total failure.
+            if (!extraction.ok && isOverloadedError(extraction.reason)) {
+              console.warn(
+                `Chunk ${chunk.chunkIndex} (doc ${documentId}): primary model overloaded, trying fallback ${FALLBACK_EXTRACTION_MODEL}`
+              );
+              await throttle();
+              extraction = await extractFactsFromChunk(chunk, FALLBACK_EXTRACTION_MODEL).catch(
+                (err) => ({
+                  ok: false as const,
+                  reason: `Fallback model also failed: ${String(err)}`,
+                })
+              );
+            }
           }
 
           if (!extraction.ok) {
@@ -123,25 +145,36 @@ export async function processDocument(documentId: string, filePath: string): Pro
             // and processing continues. Surfacing these in the UI/README is
             // the required "extraction failure" case for the assignment.
           } else if (!quotaExhausted) {
-            for (const fact of extraction.data.facts) {
-              try {
-                const embedding = await embedText(
-                  `${fact.statement} ${fact.quote ?? fact.evidenceDescription ?? ""}`
+            const facts = extraction.data.facts;
+            let embeddings: number[][] = [];
+            try {
+              embeddings = await embedTextsBatch(
+                facts.map((f) => `${f.statement} ${f.quote ?? f.evidenceDescription ?? ""}`)
+              );
+            } catch (err) {
+              if (err instanceof QuotaExhaustedError) {
+                quotaExhausted = true;
+                console.error(`Gemini quota exhausted while embedding (doc ${documentId})`);
+              } else {
+                console.error(
+                  `Batch embedding failed for chunk ${chunk.chunkIndex} (doc ${documentId}):`,
+                  err
                 );
+              }
+            }
+
+            for (let i = 0; i < facts.length; i++) {
+              if (!embeddings[i]) continue; // embedding failed/skipped for this fact
+              try {
                 await factsRepo.insertFact({
                   documentId,
                   chunkId: chunkRow.id,
-                  fact,
-                  embedding,
+                  fact: facts[i]!,
+                  embedding: embeddings[i]!,
                 });
               } catch (err) {
-                if (err instanceof QuotaExhaustedError) {
-                  quotaExhausted = true;
-                  console.error(`Gemini quota exhausted while embedding (doc ${documentId})`);
-                  break;
-                }
                 console.error(
-                  `Failed to embed/store a fact from chunk ${chunk.chunkIndex} (doc ${documentId}):`,
+                  `Failed to store a fact from chunk ${chunk.chunkIndex} (doc ${documentId}):`,
                   err
                 );
               }

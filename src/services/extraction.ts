@@ -51,8 +51,11 @@ reading, but note the uncertainty inside "statement" (e.g. "approximately").
 
 Return ONLY facts actually grounded in this page. If there is nothing
 extractable, return an empty facts array — do not fabricate facts. Aim for
-at most 20 facts for this page — prioritize the most significant, specific,
-and comparison-worthy claims over exhaustive coverage.`;
+at most 8 facts PER PAGE in this chunk — prioritize the most significant,
+specific, and comparison-worthy claims over exhaustive coverage. If this
+chunk spans multiple pages, treat each page independently for this limit
+and mention the page number in "attributes" (e.g. "page": 4) when useful
+for evidence tracing.`;
 
 // Gemini's structured-output schema, mirroring schema.ts's Zod shape.
 // Using responseSchema (not just prompting for JSON) meaningfully reduces
@@ -104,14 +107,15 @@ export interface ExtractionFailure {
  * crashing the whole document's processing.
  */
 export async function extractFactsFromChunk(
-  chunk: PageChunk
+  chunk: PageChunk,
+  modelName: string = EXTRACTION_MODEL
 ): Promise<ExtractionResult | ExtractionFailure> {
   const model = genAI.getGenerativeModel({
-    model: EXTRACTION_MODEL,
+    model: modelName,
     generationConfig: {
       responseMimeType: "application/json",
       responseSchema: responseSchema as any,
-      maxOutputTokens: 4096, // guards against mid-JSON truncation on dense pages
+      maxOutputTokens: 8192, // multi-page chunks can produce more facts than a single page did
       temperature: 0.1, // low temperature: consistent extraction, not creative writing
     },
   });
