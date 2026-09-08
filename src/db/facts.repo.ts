@@ -84,6 +84,22 @@ export async function countByDocument(documentId: string): Promise<number> {
   return rows[0].count;
 }
 
+// pgvector returns its text representation as "[0.1,0.2,...]" over the wire
+// (no custom type parser registered), so we parse it back into number[].
+export async function getFactEmbedding(id: string): Promise<number[] | null> {
+  const { rows } = await pool.query(
+    `SELECT embedding::text AS embedding FROM facts WHERE id = $1`,
+    [id]
+  );
+  const raw = rows[0]?.embedding;
+  if (!raw) return null;
+  return raw
+    .slice(1, -1)
+    .split(",")
+    .map(Number);
+}
+ 
+
 // Used by the (separate) comparison worker — included here since it's the
 // one query that actually needs pgvector, and it lives in this repo file.
 export async function findSimilarFacts(

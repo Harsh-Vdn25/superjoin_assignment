@@ -10,6 +10,8 @@ import { QuotaExhaustedError, isOverloadedError } from "./geminiErrors";
 import { FALLBACK_EXTRACTION_MODEL } from "./geminiClient";
 import { embedTextsBatch } from "./embeddings";
 import { broadcast, closeConnections } from "../sse/connections";
+import { createThrottle } from "../helpers/throttle";
+import { compareDocument } from "./comparisionWorker";
 
 const CONCURRENCY = 1; // free-tier RPM is too low to run calls in parallel
 // Bundling more pages per request cuts total request count, which is what
@@ -27,23 +29,6 @@ const PAGES_PER_CHUNK = 5;
 // sharply — check https://aistudio.google.com/rate-limit for your actual
 // current number and adjust this back down if so.
 const MIN_INTERVAL_MS = 13000;
-
-/**
- * p-limit only caps how many calls run at once — it does NOT space out when
- * each one starts. Two calls can still fire back-to-back the instant a slot
- * frees up, which is exactly what trips "high demand" 503s on the free tier.
- * This throttle enforces a minimum gap between call starts, independent of
- * concurrency, so we stay under Gemini's ~10-15 RPM free-tier ceiling.
- */
-function createThrottle(minIntervalMs: number) {
-  let nextAvailable = Date.now();
-  return async function throttle(): Promise<void> {
-    const now = Date.now();
-    const wait = Math.max(0, nextAvailable - now);
-    nextAvailable = Math.max(now, nextAvailable) + minIntervalMs;
-    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
-  };
-}
 
 /**
  * Runs the full ingestion pipeline for one uploaded document.
@@ -194,6 +179,14 @@ export async function processDocument(documentId: string, filePath: string): Pro
     await documentsRepo.updateStatus(documentId, "done");
     const factCount = await factsRepo.countByDocument(documentId);
     broadcast(documentId, "done", { documentId, factCount });
+
+    // Fire-and-forget: comparison is a separate background phase. The
+    // client's "done" event above is about ingestion finishing, not about
+    // cross-document comparison — relationships populate afterward and are
+    // simply absent from GET /facts/:id/relationships until this completes.
+    compareDocument(documentId).catch((err:any) =>
+      console.error(`Unhandled error comparing document ${documentId}:`, err)
+    );
   } catch (err) {
     console.error(`processDocument failed for document ${documentId}:`, err);
     await documentsRepo.updateStatus(documentId, "failed", String(err));

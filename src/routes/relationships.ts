@@ -1,5 +1,6 @@
 import { Router, type Request, type Response } from "express";
 import * as relationshipsRepo from "../db/relationships.repo";
+import {  recompareDocuments } from "../services/comparisionWorker";
 
 export const relationRouter = Router();
 
@@ -12,4 +13,17 @@ relationRouter.get("/", async (req: Request, res: Response) => {
     console.error("Failed to list relationships:", err);
     res.status(500).json({ message: "Failed to list relationships." });
   }
+});
+
+
+relationRouter.post("/recompare", async (req:Request, res:Response) => {
+  // Fire and forget - runs in background
+  const { documentIds } = req.body || {};
+  recompareDocuments(documentIds).catch((err) =>
+    console.error("Recompare error:", err)
+  );
+  res.json({
+    message: "Targeted relationship comparison started in background",
+    targetDocuments: documentIds || "ALL",
+  });
 });

@@ -24,7 +24,7 @@ documentRouter.post("/", upload.single("file"), async (req: Request, res: Respon
 
     // Fire-and-forget — do NOT await. The response above must return
     // immediately; processing continues in the background.
-    processDocument(documentId, req.file.path).catch((err) => {
+    processDocument(documentId, req.file.path).catch((err:any) => {
       console.error(`Unhandled error processing document ${documentId}:`, err);
     });
   } catch (err) {
