@@ -1,0 +1,26 @@
+{
+  "id": "3d3e428b-e784-4d60-b833-7c34050ac30b",
+  "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+  "chunkId": "67484446-d778-4b98-8018-6b0778424ee8",
+  "statement": "Net cash from investing activities in FY24 was ₹(99) Cr (equivalent to ₹990 million).",
+  "evidenceType": "text",
+  "quote": "Net cash generated from / (used in) investing activities for FY24 stood at ₹(99) Cr compared to ₹(3,411) Cr in FY23.",
+  "evidenceDescription": null,
+  "attributes": {
+    "metric": "net_cash_investing_activities",
+    "period": "FY24",
+    "value": -990000000,
+    "unit": "INR",
+    "comparisonPeriod": "FY23",
+    "comparisonValue": -34110000000
+  },
+  "createdAt": "2026-09-08T10:51:26.181Z",
+  "chunk": {
+    "id": "67484446-d778-4b98-8018-6b0778424ee8",
+    "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+    "chunkIndex": 3,
+    "pageStart": 3,
+    "pageEnd": 7,
+    "text": "FINANCIAL SUMMARY & CASH FLOW STATEMENT REVIEW\n\nNet cash generated from operating activities for the year ended March 31, 2024 was ₹3,412.50 million as against ₹(2,190.10) million in the previous fiscal year ended March 31, 2023.\n\nNet cash generated from / (used in) investing activities for FY24 stood at ₹(99) Cr compared to ₹(3,411) Cr in FY23. Purchase of property, plant, and equipment accounted for major capital expenditure of ₹2,105.40 million during FY24.\n\nFreight, handling and servicing costs for the year ended March 31, 2024 were ₹59,707.49 million compared to ₹56,694.80 million in FY23, representing a growth of 5.31% driven by expanded hub automation and volume growth across express parcel networks.\n\nCapital commitments remaining to be executed and not provided for as of March 31, 2024 stood at ₹412.10 million."
+  }
+}

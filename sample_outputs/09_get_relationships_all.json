@@ -1,0 +1,94 @@
+{
+  "relationships": [
+    {
+      "id": "6b82d553-d90a-4e65-afaa-d81e337c7517",
+      "factAId": "3d3e428b-e784-4d60-b833-7c34050ac30b",
+      "factBId": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
+      "relationshipType": "corroborates",
+      "confidence": 0.99,
+      "explanation": "Candidate 0 states net cash from investing activities in FY24 was ₹(99) Cr (equivalent to ₹990 million) and in FY23 was ₹(3,411) Cr (equivalent to ₹34,107 million), which matches the source values of INR 990.92 million and INR 34,107.48 million after currency scaling and rounding.",
+      "similarityScore": 0.8504527577713054,
+      "createdAt": "2026-09-08T13:59:16.806Z"
+    },
+    {
+      "id": "1a0ee6bf-d45e-46a8-b963-43ecad40b251",
+      "factAId": "d6b42f7b-a0ea-4a50-b432-620ccd5e8360",
+      "factBId": "e33c0992-b633-4842-9edc-d10396c2603f",
+      "relationshipType": "contradicts",
+      "confidence": 0.95,
+      "explanation": "The source states the income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023, whereas Candidate 1 claims this amount applies to December 31, 2021, creating a direct conflict in the dates for the same figure.",
+      "similarityScore": 0.8088195682506226,
+      "createdAt": "2026-09-08T14:00:21.895Z"
+    },
+    {
+      "id": "2982372a-701c-4217-ac37-6a879dbd0e89",
+      "factAId": "b2297a38-2133-4fa3-a9ca-43ca8e9b4378",
+      "factBId": "d6b42f7b-a0ea-4a50-b432-620ccd5e8360",
+      "relationshipType": "contradicts",
+      "confidence": 0.95,
+      "explanation": "The source states the income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023, whereas Candidate 0 states the same amount of 344.92 million was as of December 31, 2021, representing conflicting time periods for the same monetary value.",
+      "similarityScore": 0.809011995648438,
+      "createdAt": "2026-09-08T14:00:21.887Z"
+    },
+    {
+      "id": "80e28234-3f3e-40c3-a02a-34141f600a3b",
+      "factAId": "325c430f-cfe1-4323-9988-abf00d878690",
+      "factBId": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 1 refers to a different time period (December 31, 2021) and a slightly different amount (622.58 million) compared to the source fact, which covers March 31, 2024 and March 31, 2023 with 622.59 million.",
+      "similarityScore": 0.7855433533553934,
+      "createdAt": "2026-09-08T14:00:36.100Z"
+    },
+    {
+      "id": "cb01a119-6d60-48e0-89e7-ab44b543ea23",
+      "factAId": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
+      "factBId": "ddf379a2-33f4-4809-97f4-8a895a71d16d",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 0 refers to a different time period (December 31, 2021) and a slightly different amount (622.58 million) compared to the source fact, which covers March 31, 2024 and March 31, 2023 with 622.59 million.",
+      "similarityScore": 0.7927550441398237,
+      "createdAt": "2026-09-08T14:00:36.093Z"
+    },
+    {
+      "id": "75ea9ad7-23e4-4f17-a2f8-3ee882d9ba59",
+      "factAId": "1f0ef6b0-2499-4910-b592-9913cbc6a8cd",
+      "factBId": "e04dcb01-4762-409e-98dd-42c412bb089b",
+      "relationshipType": "contextual_explanation",
+      "confidence": 1.0,
+      "explanation": "Candidate 0 provides freight, handling and servicing costs for earlier time periods (nine months ended December 31, 2021 and 2020, and fiscal years 2019, 2020, and 2021), whereas the source fact covers the year ended March 31, 2024 (59,707.49 million) and March 31, 2023 (56,694.80 million). They do not conflict, but refer to completely different operating periods.",
+      "similarityScore": 0.7720569422892131,
+      "createdAt": "2026-09-08T14:00:08.380Z"
+    },
+    {
+      "id": "224d581b-bf50-408e-b97f-3bfb7bac9b56",
+      "factAId": "007125c2-cc22-4e70-abb2-783966df0eeb",
+      "factBId": "b0e74b86-b1f0-4b68-b30e-8508056473be",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.9,
+      "explanation": "The source fact discusses the ongoing transfer of tangible assets to be completed before March 31, 2025, while Candidate 0 provides the date of the underlying Asset Purchase Agreement as July 15, 2021. They do not conflict; the candidate provides the contextual background timeline of when the agreement was initiated.",
+      "similarityScore": 0.8326939281691952,
+      "createdAt": "2026-09-08T13:59:41.946Z"
+    },
+    {
+      "id": "ac2613e2-3cfa-4aa7-abb3-8d7e2ccc9a23",
+      "factAId": "6198fa87-244d-4b7e-bbc6-b0d03e9b3b5d",
+      "factBId": "9073f9bd-241b-47b5-8e22-44dca6464284",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 0 reports property, plant and equipment of ₹5,516.57 million as of December 31, 2021, whereas the source reports a gross carrying value of 21,593.51 million Indian Rupees and net block of 9,320.84 million Indian Rupees as of March 31, 2024. They look like conflicting figures for the same metric, but the difference is explained by different reporting dates and likely different business growth or scope over the years.",
+      "similarityScore": 0.7621066584164997,
+      "createdAt": "2026-09-08T13:59:29.267Z"
+    },
+    {
+      "id": "6d2e5edf-b7e5-403a-978d-ab659d269fa8",
+      "factAId": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
+      "factBId": "f1b123a2-e573-4cfa-8ae4-ea284cca4d53",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 4 discusses net cash used in investing activities for the nine months ended December 31, 2021, and 2020, whereas the source reports figures for the full years ended March 31, 2024, and 2023. They cover different time periods.",
+      "similarityScore": 0.7564534094383196,
+      "createdAt": "2026-09-08T13:59:16.814Z"
+    }
+  ]
+}

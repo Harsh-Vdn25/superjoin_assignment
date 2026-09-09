@@ -1,0 +1,106 @@
+{
+  "facts": [
+    {
+      "id": "3d3e428b-e784-4d60-b833-7c34050ac30b",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "67484446-d778-4b98-8018-6b0778424ee8",
+      "statement": "Net cash from investing activities in FY24 was ₹(99) Cr (equivalent to ₹990 million).",
+      "evidenceType": "text",
+      "quote": "Net cash generated from / (used in) investing activities for FY24 stood at ₹(99) Cr compared to ₹(3,411) Cr in FY23.",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "net_cash_investing_activities",
+        "period": "FY24",
+        "value": -990000000,
+        "unit": "INR",
+        "comparisonPeriod": "FY23",
+        "comparisonValue": -34110000000
+      },
+      "createdAt": "2026-09-08T10:51:26.181Z"
+    },
+    {
+      "id": "d6b42f7b-a0ea-4a50-b432-620ccd5e8360",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "14a644ad-20f5-4f4f-86e7-707908dc17a8",
+      "statement": "Income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023.",
+      "evidenceType": "text",
+      "quote": "Income tax matters under appeal aggregate to ₹344.92 million as at March 31, 2024 (March 31, 2023: ₹344.92 million).",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "income_tax_appeals",
+        "period": "as_at_March_31_2024",
+        "value": 344920000,
+        "unit": "INR",
+        "status": "under_appeal"
+      },
+      "createdAt": "2026-09-08T10:51:30.412Z"
+    },
+    {
+      "id": "1f0ef6b0-2499-4910-b592-9913cbc6a8cd",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "67484446-d778-4b98-8018-6b0778424ee8",
+      "statement": "Freight, handling and servicing costs reached ₹59,707.49 million for year ended March 31, 2024.",
+      "evidenceType": "text",
+      "quote": "Freight, handling and servicing costs for the year ended March 31, 2024 were ₹59,707.49 million compared to ₹56,694.80 million in FY23.",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "freight_and_servicing_costs",
+        "period": "year_ended_March_31_2024",
+        "value": 59707490000,
+        "unit": "INR",
+        "priorYearValue": 56694800000
+      },
+      "createdAt": "2026-09-08T10:51:34.890Z"
+    },
+    {
+      "id": "325c430f-cfe1-4323-9988-abf00d878690",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "22a893bc-3312-421c-8b89-1199341bc8a1",
+      "statement": "Paid up equity share capital stood at ₹622.59 million as of March 31, 2024.",
+      "evidenceType": "text",
+      "quote": "The paid-up equity share capital of the Company as at March 31, 2024 is ₹622.59 million consisting of 734,515,622 equity shares of face value ₹1 each.",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "paid_up_share_capital",
+        "period": "March_31_2024",
+        "value": 622590000,
+        "unit": "INR",
+        "totalShares": 734515622,
+        "faceValue": 1
+      },
+      "createdAt": "2026-09-08T10:51:38.102Z"
+    },
+    {
+      "id": "6198fa87-244d-4b7e-bbc6-b0d03e9b3b5d",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "33b712cd-8899-4c12-9981-88123491ca02",
+      "statement": "Property, plant and equipment carrying value reached ₹21,593.51 million as of March 31, 2024.",
+      "evidenceType": "text",
+      "quote": "Property, plant and equipment gross carrying value as at March 31, 2024 was ₹21,593.51 million and net block was ₹9,320.84 million.",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "ppe_gross_carrying_value",
+        "period": "March_31_2024",
+        "value": 21593510000,
+        "netBlockValue": 9320840000,
+        "unit": "INR"
+      },
+      "createdAt": "2026-09-08T10:51:42.511Z"
+    },
+    {
+      "id": "007125c2-cc22-4e70-abb2-783966df0eeb",
+      "documentId": "f304fa62-de75-49bb-ad1c-d443b7170144",
+      "chunkId": "44a192bc-9912-4d1a-88a2-99102931441a",
+      "statement": "Ongoing transfer of tangible assets to be completed before March 31, 2025.",
+      "evidenceType": "text",
+      "quote": "Transfer of tangible assets pursuant to the business transfer agreement is scheduled for completion prior to March 31, 2025.",
+      "evidenceDescription": null,
+      "attributes": {
+        "metric": "asset_transfer_completion",
+        "deadline": "March_31_2025",
+        "status": "ongoing"
+      },
+      "createdAt": "2026-09-08T10:51:46.002Z"
+    }
+  ]
+}

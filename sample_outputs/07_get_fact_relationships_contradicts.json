@@ -1,0 +1,17 @@
+{
+  "relationships": [
+    {
+      "id": "1a0ee6bf-d45e-46a8-b963-43ecad40b251",
+      "relationshipType": "contradicts",
+      "confidence": 0.95,
+      "explanation": "The source states the income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023, whereas Candidate 1 claims this amount applies to December 31, 2021, creating a direct conflict in the dates for the same figure.",
+      "similarityScore": 0.8088195682506226,
+      "otherFact": {
+        "id": "e33c0992-b633-4842-9edc-d10396c2603f",
+        "statement": "Income tax matters under appeal aggregated to ₹344.92 million as of December 31, 2021.",
+        "quote": "Tax claims under appeal: ₹344.92M as of Dec 31, 2021",
+        "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b"
+      }
+    }
+  ]
+}

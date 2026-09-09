@@ -1,0 +1,17 @@
+{
+  "relationships": [
+    {
+      "id": "6b82d553-d90a-4e65-afaa-d81e337c7517",
+      "relationshipType": "corroborates",
+      "confidence": 0.99,
+      "explanation": "Candidate 0 states net cash from investing activities in FY24 was ₹(99) Cr (equivalent to ₹990 million) and in FY23 was ₹(3,411) Cr (equivalent to ₹34,107 million), which matches the source values of INR 990.92 million and INR 34,107.48 million after currency scaling and rounding.",
+      "similarityScore": 0.8504527577713054,
+      "otherFact": {
+        "id": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
+        "statement": "Net cash used in investing activities for the year ended March 31, 2024 was INR 990.92 million and March 31, 2023 was INR 34,107.48 million.",
+        "quote": "Net cash used in investing activities: March 31, 2024: INR 990.92 million; March 31, 2023: INR 34,107.48 million.",
+        "documentId": "5a843371-37f8-4bd0-8c08-d283c1d00688"
+      }
+    }
+  ]
+}

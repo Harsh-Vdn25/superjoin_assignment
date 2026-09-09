@@ -1,0 +1,17 @@
+{
+  "relationships": [
+    {
+      "id": "80e28234-3f3e-40c3-a02a-34141f600a3b",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 1 refers to a different time period (December 31, 2021) and a slightly different amount (622.58 million) compared to the source fact, which covers March 31, 2024 and March 31, 2023 with 622.59 million.",
+      "similarityScore": 0.7855433533553934,
+      "otherFact": {
+        "id": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
+        "statement": "Paid up equity share capital stood at 622.58 million as of December 31, 2021.",
+        "quote": "Paid up equity share capital was 622.58M on Dec 31, 2021",
+        "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b"
+      }
+    }
+  ]
+}
