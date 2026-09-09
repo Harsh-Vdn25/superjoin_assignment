@@ -8,14 +8,7 @@
       "evidenceType": "text",
       "quote": "Net cash generated from / (used in) investing activities for FY24 stood at ₹(99) Cr compared to ₹(3,411) Cr in FY23.",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "net_cash_investing_activities",
-        "period": "FY24",
-        "value": -990000000,
-        "unit": "INR",
-        "comparisonPeriod": "FY23",
-        "comparisonValue": -34110000000
-      },
+      "attributes": { "metric": "net_cash_investing", "period": "FY24", "value": -990000000, "unit": "INR" },
       "createdAt": "2026-09-08T10:51:26.181Z"
     },
     {
@@ -26,13 +19,7 @@
       "evidenceType": "text",
       "quote": "Income tax matters under appeal aggregate to ₹344.92 million as at March 31, 2024 (March 31, 2023: ₹344.92 million).",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "income_tax_appeals",
-        "period": "as_at_March_31_2024",
-        "value": 344920000,
-        "unit": "INR",
-        "status": "under_appeal"
-      },
+      "attributes": { "metric": "income_tax_appeals", "period": "March_31_2024", "value": 344920000, "unit": "INR" },
       "createdAt": "2026-09-08T10:51:30.412Z"
     },
     {
@@ -43,13 +30,7 @@
       "evidenceType": "text",
       "quote": "Freight, handling and servicing costs for the year ended March 31, 2024 were ₹59,707.49 million compared to ₹56,694.80 million in FY23.",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "freight_and_servicing_costs",
-        "period": "year_ended_March_31_2024",
-        "value": 59707490000,
-        "unit": "INR",
-        "priorYearValue": 56694800000
-      },
+      "attributes": { "metric": "freight_costs", "period": "FY24", "value": 59707490000, "unit": "INR" },
       "createdAt": "2026-09-08T10:51:34.890Z"
     },
     {
@@ -58,16 +39,9 @@
       "chunkId": "22a893bc-3312-421c-8b89-1199341bc8a1",
       "statement": "Paid up equity share capital stood at ₹622.59 million as of March 31, 2024.",
       "evidenceType": "text",
-      "quote": "The paid-up equity share capital of the Company as at March 31, 2024 is ₹622.59 million consisting of 734,515,622 equity shares of face value ₹1 each.",
+      "quote": "The paid-up equity share capital of the Company as at March 31, 2024 is ₹622.59 million consisting of 734,515,622 equity shares.",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "paid_up_share_capital",
-        "period": "March_31_2024",
-        "value": 622590000,
-        "unit": "INR",
-        "totalShares": 734515622,
-        "faceValue": 1
-      },
+      "attributes": { "metric": "paid_up_capital", "period": "March_31_2024", "value": 622590000, "unit": "INR" },
       "createdAt": "2026-09-08T10:51:38.102Z"
     },
     {
@@ -78,13 +52,7 @@
       "evidenceType": "text",
       "quote": "Property, plant and equipment gross carrying value as at March 31, 2024 was ₹21,593.51 million and net block was ₹9,320.84 million.",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "ppe_gross_carrying_value",
-        "period": "March_31_2024",
-        "value": 21593510000,
-        "netBlockValue": 9320840000,
-        "unit": "INR"
-      },
+      "attributes": { "metric": "ppe_gross_carrying_value", "period": "March_31_2024", "value": 21593510000, "unit": "INR" },
       "createdAt": "2026-09-08T10:51:42.511Z"
     },
     {
@@ -95,12 +63,118 @@
       "evidenceType": "text",
       "quote": "Transfer of tangible assets pursuant to the business transfer agreement is scheduled for completion prior to March 31, 2025.",
       "evidenceDescription": null,
-      "attributes": {
-        "metric": "asset_transfer_completion",
-        "deadline": "March_31_2025",
-        "status": "ongoing"
-      },
+      "attributes": { "metric": "asset_transfer_deadline", "period": "March_31_2025", "value": "2025-03-31" },
       "createdAt": "2026-09-08T10:51:46.002Z"
+    },
+    {
+      "id": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
+      "documentId": "5a843371-37f8-4bd0-8c08-d283c1d00688",
+      "chunkId": "55b192cd-1123-421b-9901-11928371c102",
+      "statement": "Net cash used in investing activities for the year ended March 31, 2024 was INR 990.92 million and March 31, 2023 was INR 34,107.48 million.",
+      "evidenceType": "text",
+      "quote": "Net cash used in investing activities: March 31, 2024: INR 990.92 million; March 31, 2023: INR 34,107.48 million.",
+      "evidenceDescription": null,
+      "attributes": { "metric": "investing_cash_flow", "period": "FY24", "value": -990920000, "unit": "INR" },
+      "createdAt": "2026-09-08T17:12:15.120Z"
+    },
+    {
+      "id": "b2297a38-2133-4fa3-a9ca-43ca8e9b4378",
+      "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b",
+      "chunkId": "77c182dd-3301-491a-8812-990182736190",
+      "statement": "Income tax matters under appeal aggregated to ₹344.92 million as of December 31, 2021.",
+      "evidenceType": "text",
+      "quote": "Tax claims under appeal: ₹344.92M as of Dec 31, 2021",
+      "evidenceDescription": null,
+      "attributes": { "metric": "tax_claims_appeal", "period": "Dec_31_2021", "value": 344920000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:46:12.890Z"
+    },
+    {
+      "id": "e33c0992-b633-4842-9edc-d10396c2603f",
+      "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b",
+      "chunkId": "77c182dd-3301-491a-8812-990182736190",
+      "statement": "Income tax matters under appeal aggregated to ₹344.92 million as of December 31, 2021.",
+      "evidenceType": "text",
+      "quote": "Tax claims under appeal: ₹344.92M as of Dec 31, 2021",
+      "evidenceDescription": null,
+      "attributes": { "metric": "tax_claims_appeal", "period": "Dec_31_2021", "value": 344920000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:46:15.110Z"
+    },
+    {
+      "id": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
+      "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b",
+      "chunkId": "88d192ee-4412-410a-9921-110293847102",
+      "statement": "Paid up equity share capital was 622.58M on Dec 31, 2021.",
+      "evidenceType": "text",
+      "quote": "Paid up share capital was 622.58M on Dec 31, 2021",
+      "evidenceDescription": null,
+      "attributes": { "metric": "share_capital", "period": "Dec_31_2021", "value": 622580000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:46:20.450Z"
+    },
+    {
+      "id": "6840b49c-02ab-4f6e-bc9b-94cdc962dc07",
+      "documentId": "14454666-f7f9-41c1-a7a3-00dc63fbee8f",
+      "chunkId": "99e192ff-5512-421b-8812-220193847103",
+      "statement": "Total contingent liabilities for tax matters in appeal as of December 31, 2021 includes 344.92 million for income tax.",
+      "evidenceType": "text",
+      "quote": "Contingent liabilities for tax matters in appeal as of December 31, 2021 includes 344.92M for income tax.",
+      "evidenceDescription": null,
+      "attributes": { "metric": "tax_contingent_liabilities", "period": "Dec_31_2021", "value": 344920000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:50:01.120Z"
+    },
+    {
+      "id": "a9ea91ff-277d-4232-bd31-f63f88ae2e25",
+      "documentId": "e424faa1-5726-41da-b43d-466d244f0e3b",
+      "chunkId": "10f192aa-6612-431c-9923-330193847104",
+      "statement": "Claims against the Group for Goods and Service Tax stood at 10.22 million as of March 31, 2024.",
+      "evidenceType": "text",
+      "quote": "GST claims against Group: ₹10.22 million as of March 31, 2024.",
+      "evidenceDescription": null,
+      "attributes": { "metric": "gst_claims", "period": "March_31_2024", "value": 10220000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:50:05.340Z"
+    },
+    {
+      "id": "e04dcb01-4762-409e-98dd-42c412bb089b",
+      "documentId": "14454666-f7f9-41c1-a7a3-00dc63fbee8f",
+      "chunkId": "11a293bb-7712-441d-8834-440193847105",
+      "statement": "Freight costs for nine months ended December 31, 2021 stood at ₹41,200.50 million.",
+      "evidenceType": "text",
+      "quote": "Freight and servicing costs for nine months ended Dec 31, 2021: ₹41,200.50M",
+      "evidenceDescription": null,
+      "attributes": { "metric": "freight_costs_9m", "period": "9M_Dec_31_2021", "value": 41200500000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:50:10.780Z"
+    },
+    {
+      "id": "b0e74b86-b1f0-4b68-b30e-8508056473be",
+      "documentId": "14454666-f7f9-41c1-a7a3-00dc63fbee8f",
+      "chunkId": "12b394cc-8812-451e-9945-550193847106",
+      "statement": "Asset Purchase Agreement initiated on July 15, 2021.",
+      "evidenceType": "text",
+      "quote": "Underlying Asset Purchase Agreement execution date: July 15, 2021",
+      "evidenceDescription": null,
+      "attributes": { "metric": "apa_execution_date", "value": "2021-07-15" },
+      "createdAt": "2026-09-08T23:50:15.910Z"
+    },
+    {
+      "id": "9073f9bd-241b-47b5-8e22-44dca6464284",
+      "documentId": "14454666-f7f9-41c1-a7a3-00dc63fbee8f",
+      "chunkId": "13c495dd-9912-461f-8856-660193847107",
+      "statement": "Property, plant and equipment stood at ₹5,516.57 million as of December 31, 2021.",
+      "evidenceType": "text",
+      "quote": "Property plant equipment net block on Dec 31, 2021: ₹5,516.57M",
+      "evidenceDescription": null,
+      "attributes": { "metric": "ppe_net_block", "period": "Dec_31_2021", "value": 5516570000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:50:20.120Z"
+    },
+    {
+      "id": "f1b123a2-e573-4cfa-8ae4-ea284cca4d53",
+      "documentId": "14454666-f7f9-41c1-a7a3-00dc63fbee8f",
+      "chunkId": "14d596ee-0012-471g-9967-770193847108",
+      "statement": "Net cash used in investing activities for nine months ended December 31, 2021 was ₹(1,210.40) million.",
+      "evidenceType": "text",
+      "quote": "Investing cash flow 9M Dec 31, 2021: ₹(1,210.40)M",
+      "evidenceDescription": null,
+      "attributes": { "metric": "investing_cash_flow_9m", "period": "9M_Dec_31_2021", "value": -1210400000, "unit": "INR" },
+      "createdAt": "2026-09-08T23:50:25.430Z"
     }
   ]
 }

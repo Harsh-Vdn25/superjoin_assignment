@@ -1,0 +1,104 @@
+{
+  "relationships": [
+    {
+      "id": "e24c3d99-21dd-4544-a6f7-e68a9340e3f9",
+      "factAId": "55f8b97d-e40a-4f63-be0b-cdeeafda35d8",
+      "factBId": "fa10ab37-5d20-4166-8b26-1e2761778c9f",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that Sahil Barua holds 13,407,798 Equity Shares, representing 2.08% of the pre-Offer equity share capital.",
+      "similarityScore": 0.99885265658484,
+      "createdAt": "2026-09-09T05:47:56.074Z"
+    },
+    {
+      "id": "8ee4d15f-fe97-4e60-916f-e9debcd51382",
+      "factAId": "36031985-05e3-4ad5-8baf-db4ce22c9d53",
+      "factBId": "87f54fcc-6160-4b40-98ce-a4318c2c4d5a",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and Candidate 0 state that Abhik Mitra is entitled to a one-time deferred bonus of ₹45.21 million payable upon the expiry of two years from August 24, 2021.",
+      "similarityScore": 0.988725160924522,
+      "createdAt": "2026-09-09T05:47:42.841Z"
+    },
+    {
+      "id": "4e93d7c7-1250-484a-adc2-a75fda111575",
+      "factAId": "14a4e668-3b3a-41e9-9f54-bdc0a7476532",
+      "factBId": "4b065556-11d3-4d04-aca3-3557f2161c4e",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source fact and Candidate 0 state that Abhik Mitra received an aggregate compensation of 19.06 million from the Material Subsidiary in Fiscal 2021.",
+      "similarityScore": 0.9930369128934005,
+      "createdAt": "2026-09-09T05:47:29.600Z"
+    },
+    {
+      "id": "1c38c66c-afb0-45c0-862c-c9d72b34a316",
+      "factAId": "48bb04b5-5310-4586-abd1-cbbb507f51c3",
+      "factBId": "5594e21b-bb89-4c9e-b82f-720f0210adab",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and Candidate 0 state that Amit Agarwal received an aggregate compensation of 13.79 million in Fiscal 2021, referring to the exact same person, time period, and amount.",
+      "similarityScore": 0.9944427753310657,
+      "createdAt": "2026-09-09T05:47:17.118Z"
+    },
+    {
+      "id": "ee85bddf-a0bf-4c7a-8204-042f082e358a",
+      "factAId": "969dbfbf-9e73-4419-96b9-128d8d942c73",
+      "factBId": "b78a1573-25fa-442c-8dd7-4bc8453ab546",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both Candidate 0 and the Source state that Ajith Pai Mangalore received an aggregate compensation of ₹24.79 million in Fiscal 2021.",
+      "similarityScore": 0.9935763770443846,
+      "createdAt": "2026-09-09T05:47:03.710Z"
+    },
+    {
+      "id": "e27223f8-55a5-44de-b3bc-f4a1a5b2ff82",
+      "factAId": "94611849-ed39-4498-90f4-5c7fe03ecc6d",
+      "factBId": "966e2c54-868c-46b5-9d8d-e702c15c0fce",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state identical membership for the Stakeholders' Relationship Committee, listing Saugata Gupta as Chairperson, Srivatsan Rajan as Member, and Kapil Bharati as Member.",
+      "similarityScore": 0.9853855480102462,
+      "createdAt": "2026-09-09T05:46:24.568Z"
+    },
+    {
+      "id": "b6ee3619-4c91-4575-b758-ea74d458544f",
+      "factAId": "272c32e4-b2b4-4066-bcdf-5ef802da1922",
+      "factBId": "2df767c7-247e-4481-bd9a-4e1ff9a7c5bd",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate 0 state that the Stakeholders' Relationship Committee was constituted pursuant to a board resolution passed on October 13, 2021.",
+      "similarityScore": 0.9940411467598972,
+      "createdAt": "2026-09-09T05:46:11.747Z"
+    },
+    {
+      "id": "24a5aa38-c630-4ee6-ba1e-e3d00a14293f",
+      "factAId": "203959aa-bfde-4612-bf6e-55345e90e6d7",
+      "factBId": "795c2813-faab-40f6-806d-134c80b79a6e",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that the Nomination and Remuneration Committee consists of Kalpana Jaisingh Morparia (Chairperson), Deepak Kapoor (Member), Saugata Gupta (Member), and Suvir Suren Sujan (Member).",
+      "similarityScore": 0.9851516015256012,
+      "createdAt": "2026-09-09T05:45:58.727Z"
+    },
+    {
+      "id": "7f798818-ec92-404a-8ff8-42a2b54a60a3",
+      "factAId": "0a6b2739-b2bc-480c-82ce-1c3254d988e3",
+      "factBId": "10464f13-0047-4e79-9825-3a86760bd904",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that the Nomination and Remuneration Committee was reconstituted by a board resolution on October 13, 2021.",
+      "similarityScore": 1,
+      "createdAt": "2026-09-09T05:45:45.907Z"
+    },
+    {
+      "id": "7876b8a2-c2cd-4dfd-a5bd-dcc80876bdee",
+      "factAId": "3a1727c6-482c-43d4-8fb7-1c120db0ef5c",
+      "factBId": "3ab14659-080d-4ff2-bf7a-04bc6f4d08d7",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate 0 state the exact same composition and roles for the Audit Committee, listing Romesh Sobti as Chairperson, Srivatsan Rajan as Member, and Suvir Suren Sujan as Member.",
+      "similarityScore": 0.9733450481692867,
+      "createdAt": "2026-09-09T05:45:32.635Z"
+    }
+  ]
+}

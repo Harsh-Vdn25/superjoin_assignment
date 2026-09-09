@@ -1,0 +1,114 @@
+{
+    "relationships": [
+        {
+            "id": "f4a230c8-ff37-49e9-bb79-b644c38f1d91",
+            "factAId": "27b0a058-0d02-4b3f-8c8e-64c43c3ef1b8",
+            "factBId": "b65a495f-b044-4a85-9ef4-690721e76577",
+            "relationshipType": "contradicts",
+            "confidence": 0.95,
+            "explanation": "Candidate 3 states that 75% of the directors on the board are non-executive independent directors. According to the source, there are 5 independent directors out of 11 total directors, which equals approximately 45.45% (or 8 out of 11 if combining nominee/independent, which would be ~72.7%), conflicting with the stated 75% metric.",
+            "similarityScore": 0.7067464061907168,
+            "createdAt": "2026-09-09T05:44:54.318Z"
+        },
+        {
+            "id": "0d1af7c7-c085-4fc3-b652-2e9a2641beca",
+            "factAId": "119ddfab-f469-4668-82c4-82df5f8f534f",
+            "factBId": "b0e74b86-b1f0-4b68-b30e-8508056473be",
+            "relationshipType": "contradicts",
+            "confidence": 0.95,
+            "explanation": "The source fact states the asset purchase agreement was executed among our Company, FedEx, and TNT India Private Limited. Candidate 0 states the agreement was among Delhivery, FedEx, and TNT India Private Limited, creating a conflict regarding the parties involved (Our Company vs. Delhivery) for the exact same July 15, 2021 agreement.",
+            "similarityScore": 0.9408060251057002,
+            "createdAt": "2026-09-09T05:40:46.928Z"
+        },
+        {
+            "id": "538e7518-d09d-47d8-ba40-99c6f10cb3a8",
+            "factAId": "6e01033d-767f-4a46-82c8-6edf465a4839",
+            "factBId": "e03b28fd-89af-4a5c-9430-6f1aceedc921",
+            "relationshipType": "contradicts",
+            "confidence": 0.95,
+            "explanation": "Candidate 4 refers to restated loss *before tax* with differing values for Fiscal 2020 (₹2,688.02 million vs ₹2,689.26 million in the source) and the nine months ended Dec 31, 2021 (₹8,987.45 million vs ₹8,911.39 million in the source), indicating it represents a different metric (loss before tax vs total restated loss).",
+            "similarityScore": 0.8541286337010033,
+            "createdAt": "2026-09-09T05:33:22.597Z"
+        },
+        {
+            "id": "2ad280bf-307e-4d06-9f85-acdc0b1293f4",
+            "factAId": "39bfc72c-6fe8-4759-a698-8d89e7fe5c3a",
+            "factBId": "f939aa76-beff-4ded-a463-c1b8c8a78c76",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "Candidate 4 attributes a different number of shares (6,800,887) and amount (3,309.33 million rupees) to a different company (Kotak Mahindra Capital Company Limited) compared to the source fact.",
+            "similarityScore": 0.9072134042453321,
+            "createdAt": "2026-09-09T05:26:04.046Z"
+        },
+        {
+            "id": "539ed9b3-dda1-4467-8ff5-0c10ad4bb629",
+            "factAId": "d19167a2-b153-49d7-89a6-20802eee7751",
+            "factBId": "f939aa76-beff-4ded-a463-c1b8c8a78c76",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "While candidate 2 lists the exact same figures (6,800,986 equity shares and 3,309.37 million rupees), it attributes them to a different entity (BofA Securities India Limited) instead of Citigroup Global Markets India Private Limited as stated in the source.",
+            "similarityScore": 0.9163822954759051,
+            "createdAt": "2026-09-09T05:26:04.045Z"
+        },
+        {
+            "id": "63b835c8-ad64-4507-82e7-2cb4d2577d08",
+            "factAId": "8e429f5c-4a4e-410e-a2e3-4a2184e8f8a9",
+            "factBId": "f939aa76-beff-4ded-a463-c1b8c8a78c76",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "The source fact attributes the underwriting of 6,800,986 shares and 3,309.37 million rupees to Citigroup Global Markets India Private Limited, whereas candidate 1 attributes a different number of shares (6,800,987) and a different amount (3,309.38 million rupees) to Morgan Stanley India Company Private Limited.",
+            "similarityScore": 0.9175951161940958,
+            "createdAt": "2026-09-09T05:26:04.044Z"
+        },
+        {
+            "id": "7a9a8b54-22d7-449a-8bd2-865fd9d0c21f",
+            "factAId": "39bfc72c-6fe8-4759-a698-8d89e7fe5c3a",
+            "factBId": "7e9320c9-884f-4ff5-ab20-4118f9a43710",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "Candidate 4 attributes 6,800,887 shares amounting to 3,309.33 million rupees to Kotak Mahindra Capital Company Limited, which conflicts with the source fact regarding the company, share count, and amount.",
+            "similarityScore": 0.8942215839722559,
+            "createdAt": "2026-09-09T05:25:52.368Z"
+        },
+        {
+            "id": "10172e4c-9b34-49fa-89ff-55413a58d28b",
+            "factAId": "7e9320c9-884f-4ff5-ab20-4118f9a43710",
+            "factBId": "bcaeaec1-ff32-444f-9bf2-7d2cb90dee83",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "Both claim the exact same number of shares and amount, but candidate 2 attributes this to Citigroup Global Markets India Private Limited whereas the source attributes it to BofA Securities India Limited.",
+            "similarityScore": 0.9163822954759051,
+            "createdAt": "2026-09-09T05:25:52.367Z"
+        },
+        {
+            "id": "6665fd6b-ce96-49d4-ada5-9e2bc9c46e85",
+            "factAId": "7e9320c9-884f-4ff5-ab20-4118f9a43710",
+            "factBId": "8e429f5c-4a4e-410e-a2e3-4a2184e8f8a9",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "The source attributes the underwriting of 6,800,986 shares and 3,309.37 million rupees to BofA Securities India Limited, whereas candidate 1 attributes a different number of shares (6,800,987) and a different amount (3,309.38 million rupees) to Morgan Stanley India Company Private Limited.",
+            "similarityScore": 0.9212758745074666,
+            "createdAt": "2026-09-09T05:25:52.366Z"
+        },
+        {
+            "id": "1097eb49-c8cb-4405-9674-a0cc5a4b4392",
+            "factAId": "39bfc72c-6fe8-4759-a698-8d89e7fe5c3a",
+            "factBId": "554992e8-a3f1-491e-a35f-b009a1b537b4",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "Candidate 4 refers to Kotak Mahindra Capital Company Limited with different values (6,800,887 shares and 3,309.33 million rupees) compared to the source fact about Morgan Stanley.",
+            "similarityScore": 0.9042057868706839,
+            "createdAt": "2026-09-09T05:25:37.725Z"
+        },
+        {
+            "id": "6b707029-3c93-4fa7-bc74-5bd7592ecd57",
+            "factAId": "554992e8-a3f1-491e-a35f-b009a1b537b4",
+            "factBId": "bcaeaec1-ff32-444f-9bf2-7d2cb90dee83",
+            "relationshipType": "contradicts",
+            "confidence": 1,
+            "explanation": "Candidate 2 refers to Citigroup Global Markets India Private Limited with different values (6,800,986 shares and 3,309.37 million rupees) compared to the source fact about Morgan Stanley.",
+            "similarityScore": 0.9175951161940958,
+            "createdAt": "2026-09-09T05:25:37.724Z"
+        }
+    ]
+}

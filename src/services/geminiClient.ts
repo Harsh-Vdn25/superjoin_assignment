@@ -12,7 +12,7 @@ export const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // the current stable, Google-recommended Flash model as of this writing.
 // Check https://ai.google.dev/gemini-api/docs/models if this 404s again;
 // Google's Flash lineup has moved fast and old model strings get retired.
-export const EXTRACTION_MODEL = "gemini-3.6-flash";
+export const EXTRACTION_MODEL = "gemini-3.5-flash-lite";
 // Used when EXTRACTION_MODEL returns a 503 "high demand" error — a
 // different model has a separate capacity pool, so it's often available
 // even when the primary one is overloaded.

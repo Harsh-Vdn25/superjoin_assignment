@@ -166,6 +166,8 @@ Full, unedited API JSON responses generated from a live run on starter financial
 - [`sample_outputs/07_get_fact_relationships_contradicts.json`](./sample_outputs/07_get_fact_relationships_contradicts.json) — Contradiction case
 - [`sample_outputs/08_get_fact_relationships_contextual.json`](./sample_outputs/08_get_fact_relationships_contextual.json) — Contextual explanation case
 - [`sample_outputs/09_get_relationships_all.json`](./sample_outputs/09_get_relationships_all.json) — Knowledge layer relationship graph
+- [`sample_outputs/10_get_relationships_filtered_contradicts.json`](./sample_outputs/10_get_relationships_filtered_contradicts.json) — Global relationships filtered by `?type=contradicts`
+- [`sample_outputs/11_get_relationships_filtered_corroborates.json`](./sample_outputs/11_get_relationships_filtered_corroborates.json) — Global relationships filtered by `?type=corroborates`
 
 ---
 

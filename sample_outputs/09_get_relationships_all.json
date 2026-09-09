@@ -1,94 +1,224 @@
 {
   "relationships": [
     {
-      "id": "6b82d553-d90a-4e65-afaa-d81e337c7517",
-      "factAId": "3d3e428b-e784-4d60-b833-7c34050ac30b",
-      "factBId": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
+      "id": "e24c3d99-21dd-4544-a6f7-e68a9340e3f9",
+      "factAId": "55f8b97d-e40a-4f63-be0b-cdeeafda35d8",
+      "factBId": "fa10ab37-5d20-4166-8b26-1e2761778c9f",
       "relationshipType": "corroborates",
-      "confidence": 0.99,
-      "explanation": "Candidate 0 states net cash from investing activities in FY24 was ₹(99) Cr (equivalent to ₹990 million) and in FY23 was ₹(3,411) Cr (equivalent to ₹34,107 million), which matches the source values of INR 990.92 million and INR 34,107.48 million after currency scaling and rounding.",
-      "similarityScore": 0.8504527577713054,
-      "createdAt": "2026-09-08T13:59:16.806Z"
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that Sahil Barua holds 13,407,798 Equity Shares, representing 2.08% of the pre-Offer equity share capital.",
+      "similarityScore": 0.99885265658484,
+      "createdAt": "2026-09-09T05:47:56.074Z"
     },
     {
-      "id": "1a0ee6bf-d45e-46a8-b963-43ecad40b251",
-      "factAId": "d6b42f7b-a0ea-4a50-b432-620ccd5e8360",
-      "factBId": "e33c0992-b633-4842-9edc-d10396c2603f",
-      "relationshipType": "contradicts",
-      "confidence": 0.95,
-      "explanation": "The source states the income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023, whereas Candidate 1 claims this amount applies to December 31, 2021, creating a direct conflict in the dates for the same figure.",
-      "similarityScore": 0.8088195682506226,
-      "createdAt": "2026-09-08T14:00:21.895Z"
+      "id": "8ee4d15f-fe97-4e60-916f-e9debcd51382",
+      "factAId": "36031985-05e3-4ad5-8baf-db4ce22c9d53",
+      "factBId": "87f54fcc-6160-4b40-98ce-a4318c2c4d5a",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and Candidate 0 state that Abhik Mitra is entitled to a one-time deferred bonus of ₹45.21 million payable upon the expiry of two years from August 24, 2021.",
+      "similarityScore": 0.988725160924522,
+      "createdAt": "2026-09-09T05:47:42.841Z"
     },
     {
-      "id": "2982372a-701c-4217-ac37-6a879dbd0e89",
-      "factAId": "b2297a38-2133-4fa3-a9ca-43ca8e9b4378",
-      "factBId": "d6b42f7b-a0ea-4a50-b432-620ccd5e8360",
-      "relationshipType": "contradicts",
-      "confidence": 0.95,
-      "explanation": "The source states the income tax matters in appeal were 344.92 million as of March 31, 2024 and March 31, 2023, whereas Candidate 0 states the same amount of 344.92 million was as of December 31, 2021, representing conflicting time periods for the same monetary value.",
-      "similarityScore": 0.809011995648438,
-      "createdAt": "2026-09-08T14:00:21.887Z"
-    },
-    {
-      "id": "80e28234-3f3e-40c3-a02a-34141f600a3b",
-      "factAId": "325c430f-cfe1-4323-9988-abf00d878690",
-      "factBId": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
-      "relationshipType": "contextual_explanation",
-      "confidence": 0.95,
-      "explanation": "Candidate 1 refers to a different time period (December 31, 2021) and a slightly different amount (622.58 million) compared to the source fact, which covers March 31, 2024 and March 31, 2023 with 622.59 million.",
-      "similarityScore": 0.7855433533553934,
-      "createdAt": "2026-09-08T14:00:36.100Z"
-    },
-    {
-      "id": "cb01a119-6d60-48e0-89e7-ab44b543ea23",
-      "factAId": "54bd8b54-9d1e-461f-9868-90b07dbb8fe7",
-      "factBId": "ddf379a2-33f4-4809-97f4-8a895a71d16d",
-      "relationshipType": "contextual_explanation",
-      "confidence": 0.95,
-      "explanation": "Candidate 0 refers to a different time period (December 31, 2021) and a slightly different amount (622.58 million) compared to the source fact, which covers March 31, 2024 and March 31, 2023 with 622.59 million.",
-      "similarityScore": 0.7927550441398237,
-      "createdAt": "2026-09-08T14:00:36.093Z"
-    },
-    {
-      "id": "75ea9ad7-23e4-4f17-a2f8-3ee882d9ba59",
-      "factAId": "1f0ef6b0-2499-4910-b592-9913cbc6a8cd",
-      "factBId": "e04dcb01-4762-409e-98dd-42c412bb089b",
-      "relationshipType": "contextual_explanation",
-      "confidence": 1.0,
-      "explanation": "Candidate 0 provides freight, handling and servicing costs for earlier time periods (nine months ended December 31, 2021 and 2020, and fiscal years 2019, 2020, and 2021), whereas the source fact covers the year ended March 31, 2024 (59,707.49 million) and March 31, 2023 (56,694.80 million). They do not conflict, but refer to completely different operating periods.",
-      "similarityScore": 0.7720569422892131,
-      "createdAt": "2026-09-08T14:00:08.380Z"
-    },
-    {
-      "id": "224d581b-bf50-408e-b97f-3bfb7bac9b56",
-      "factAId": "007125c2-cc22-4e70-abb2-783966df0eeb",
-      "factBId": "b0e74b86-b1f0-4b68-b30e-8508056473be",
+      "id": "24036d26-545c-42e0-8ca0-edea78341ee0",
+      "factAId": "36031985-05e3-4ad5-8baf-db4ce22c9d53",
+      "factBId": "4b065556-11d3-4d04-aca3-3557f2161c4e",
       "relationshipType": "contextual_explanation",
       "confidence": 0.9,
-      "explanation": "The source fact discusses the ongoing transfer of tangible assets to be completed before March 31, 2025, while Candidate 0 provides the date of the underlying Asset Purchase Agreement as July 15, 2021. They do not conflict; the candidate provides the contextual background timeline of when the agreement was initiated.",
-      "similarityScore": 0.8326939281691952,
-      "createdAt": "2026-09-08T13:59:41.946Z"
+      "explanation": "Candidate 3 discusses a different type of payment (a one-time deferred bonus of ₹45.21 million tied to the Spoton acquisition) rather than the annual aggregate compensation of 19.06 million in Fiscal 2021.",
+      "similarityScore": 0.7739013798772194,
+      "createdAt": "2026-09-09T05:47:29.607Z"
     },
     {
-      "id": "ac2613e2-3cfa-4aa7-abb3-8d7e2ccc9a23",
-      "factAId": "6198fa87-244d-4b7e-bbc6-b0d03e9b3b5d",
-      "factBId": "9073f9bd-241b-47b5-8e22-44dca6464284",
-      "relationshipType": "contextual_explanation",
-      "confidence": 0.95,
-      "explanation": "Candidate 0 reports property, plant and equipment of ₹5,516.57 million as of December 31, 2021, whereas the source reports a gross carrying value of 21,593.51 million Indian Rupees and net block of 9,320.84 million Indian Rupees as of March 31, 2024. They look like conflicting figures for the same metric, but the difference is explained by different reporting dates and likely different business growth or scope over the years.",
-      "similarityScore": 0.7621066584164997,
-      "createdAt": "2026-09-08T13:59:29.267Z"
+      "id": "4e93d7c7-1250-484a-adc2-a75fda111575",
+      "factAId": "14a4e668-3b3a-41e9-9f54-bdc0a7476532",
+      "factBId": "4b065556-11d3-4d04-aca3-3557f2161c4e",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source fact and Candidate 0 state that Abhik Mitra received an aggregate compensation of 19.06 million from the Material Subsidiary in Fiscal 2021.",
+      "similarityScore": 0.9930369128934005,
+      "createdAt": "2026-09-09T05:47:29.600Z"
     },
     {
-      "id": "6d2e5edf-b7e5-403a-978d-ab659d269fa8",
-      "factAId": "4f3cfcc1-a29f-41b4-96d7-0024abf12856",
-      "factBId": "f1b123a2-e573-4cfa-8ae4-ea284cca4d53",
+      "id": "1f5000f5-fbee-4ee6-9f6a-a17e3d9e1d54",
+      "factAId": "48bb04b5-5310-4586-abd1-cbbb507f51c3",
+      "factBId": "a2682892-e678-47c8-8c90-3b41a5ef6903",
       "relationshipType": "contextual_explanation",
       "confidence": 0.95,
-      "explanation": "Candidate 4 discusses net cash used in investing activities for the nine months ended December 31, 2021, and 2020, whereas the source reports figures for the full years ended March 31, 2024, and 2023. They cover different time periods.",
-      "similarityScore": 0.7564534094383196,
-      "createdAt": "2026-09-08T13:59:16.814Z"
+      "explanation": "Candidate 2 discusses remuneration for Amit Agarwal as key management personnel amounting to 343.33 million for the nine months ended December 31, 2021, which covers a different time frame, broader related-party categories, and a different accounting period compared to the source fact of 13.79 million for Fiscal 2021.",
+      "similarityScore": 0.8278001413630702,
+      "createdAt": "2026-09-09T05:47:17.125Z"
+    },
+    {
+      "id": "1c38c66c-afb0-45c0-862c-c9d72b34a316",
+      "factAId": "48bb04b5-5310-4586-abd1-cbbb507f51c3",
+      "factBId": "5594e21b-bb89-4c9e-b82f-720f0210adab",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and Candidate 0 state that Amit Agarwal received an aggregate compensation of 13.79 million in Fiscal 2021, referring to the exact same person, time period, and amount.",
+      "similarityScore": 0.9944427753310657,
+      "createdAt": "2026-09-09T05:47:17.118Z"
+    },
+    {
+      "id": "baab507e-d272-4010-9433-0ecc4599bdd5",
+      "factAId": "4556805b-351e-4a1f-83c3-e3fe2075350c",
+      "factBId": "969dbfbf-9e73-4419-96b9-128d8d942c73",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 1 reports a remuneration of 367.09 million for the nine months ended December 31, 2021, whereas the source reports 24.79 million for Fiscal 2021. The difference is due to different time periods and likely different scopes of what is included in key management personnel remuneration versus individual executive compensation.",
+      "similarityScore": 0.8420150771446807,
+      "createdAt": "2026-09-09T05:47:03.717Z"
+    },
+    {
+      "id": "ee85bddf-a0bf-4c7a-8204-042f082e358a",
+      "factAId": "969dbfbf-9e73-4419-96b9-128d8d942c73",
+      "factBId": "b78a1573-25fa-442c-8dd7-4bc8453ab546",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both Candidate 0 and the Source state that Ajith Pai Mangalore received an aggregate compensation of ₹24.79 million in Fiscal 2021.",
+      "similarityScore": 0.9935763770443846,
+      "createdAt": "2026-09-09T05:47:03.710Z"
+    },
+    {
+      "id": "e27223f8-55a5-44de-b3bc-f4a1a5b2ff82",
+      "factAId": "94611849-ed39-4498-90f4-5c7fe03ecc6d",
+      "factBId": "966e2c54-868c-46b5-9d8d-e702c15c0fce",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state identical membership for the Stakeholders' Relationship Committee, listing Saugata Gupta as Chairperson, Srivatsan Rajan as Member, and Kapil Bharati as Member.",
+      "similarityScore": 0.9853855480102462,
+      "createdAt": "2026-09-09T05:46:24.568Z"
+    },
+    {
+      "id": "b6ee3619-4c91-4575-b758-ea74d458544f",
+      "factAId": "272c32e4-b2b4-4066-bcdf-5ef802da1922",
+      "factBId": "2df767c7-247e-4481-bd9a-4e1ff9a7c5bd",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate 0 state that the Stakeholders' Relationship Committee was constituted pursuant to a board resolution passed on October 13, 2021.",
+      "similarityScore": 0.9940411467598972,
+      "createdAt": "2026-09-09T05:46:11.747Z"
+    },
+    {
+      "id": "24a5aa38-c630-4ee6-ba1e-e3d00a14293f",
+      "factAId": "203959aa-bfde-4612-bf6e-55345e90e6d7",
+      "factBId": "795c2813-faab-40f6-806d-134c80b79a6e",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that the Nomination and Remuneration Committee consists of Kalpana Jaisingh Morparia (Chairperson), Deepak Kapoor (Member), Saugata Gupta (Member), and Suvir Suren Sujan (Member).",
+      "similarityScore": 0.9851516015256012,
+      "createdAt": "2026-09-09T05:45:58.727Z"
+    },
+    {
+      "id": "7f798818-ec92-404a-8ff8-42a2b54a60a3",
+      "factAId": "0a6b2739-b2bc-480c-82ce-1c3254d988e3",
+      "factBId": "10464f13-0047-4e79-9825-3a86760bd904",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that the Nomination and Remuneration Committee was reconstituted by a board resolution on October 13, 2021.",
+      "similarityScore": 1,
+      "createdAt": "2026-09-09T05:45:45.907Z"
+    },
+    {
+      "id": "7876b8a2-c2cd-4dfd-a5bd-dcc80876bdee",
+      "factAId": "3a1727c6-482c-43d4-8fb7-1c120db0ef5c",
+      "factBId": "3ab14659-080d-4ff2-bf7a-04bc6f4d08d7",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate 0 state the exact same composition and roles for the Audit Committee, listing Romesh Sobti as Chairperson, Srivatsan Rajan as Member, and Suvir Suren Sujan as Member.",
+      "similarityScore": 0.9733450481692867,
+      "createdAt": "2026-09-09T05:45:32.635Z"
+    },
+    {
+      "id": "1b38c107-915d-41a8-a409-289a98082848",
+      "factAId": "50a08f77-ee45-4713-811e-adfd460648a9",
+      "factBId": "cffbbf70-a317-4b22-9d3b-5afa23b477d0",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate state that the Audit Committee was reconstituted pursuant to a Board resolution passed on April 19, 2022.",
+      "similarityScore": 0.9969208197560714,
+      "createdAt": "2026-09-09T05:45:19.760Z"
+    },
+    {
+      "id": "b72d0598-25e9-4c39-a6b7-2cbad5f3b3f3",
+      "factAId": "3ab14659-080d-4ff2-bf7a-04bc6f4d08d7",
+      "factBId": "73a0e3af-90a3-4989-8841-b3b71f7da98f",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.85,
+      "explanation": "Candidate confirms Srivatsan Rajan's role as an Independent Director, but focuses on his membership in the Audit Committee rather than his appointment to the subsidiary's board.",
+      "similarityScore": 0.6878729104724448,
+      "createdAt": "2026-09-09T05:45:06.630Z"
+    },
+    {
+      "id": "92f3a8bc-ac67-4a5f-bf11-6bb6bd291c4b",
+      "factAId": "73a0e3af-90a3-4989-8841-b3b71f7da98f",
+      "factBId": "f9f5a588-0694-4be0-ba4a-0931b856db7e",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.85,
+      "explanation": "Candidate mentions Spoton Logistics Private Limited (the same subsidiary mentioned in the source), but discusses a financial loan transaction rather than board appointments.",
+      "similarityScore": 0.7006078836630917,
+      "createdAt": "2026-09-09T05:45:06.629Z"
+    },
+    {
+      "id": "e0ba2fab-3812-46f4-8dc2-feeefe14525e",
+      "factAId": "194b871a-bbd7-47d9-9cfa-15b52c8d490d",
+      "factBId": "73a0e3af-90a3-4989-8841-b3b71f7da98f",
+      "relationshipType": "corroborates",
+      "confidence": 0.9,
+      "explanation": "Both facts establish Srivatsan Rajan's role as an independent director.",
+      "similarityScore": 0.7512194014023144,
+      "createdAt": "2026-09-09T05:45:06.628Z"
+    },
+    {
+      "id": "1847f91d-fbe7-476e-96ba-83eb48d243f6",
+      "factAId": "0f6779b4-aaf8-4495-8e77-b5e6bd51484c",
+      "factBId": "73a0e3af-90a3-4989-8841-b3b71f7da98f",
+      "relationshipType": "corroborates",
+      "confidence": 0.9,
+      "explanation": "Both facts confirm that Srivatsan Rajan serves as an independent director.",
+      "similarityScore": 0.7843276791345558,
+      "createdAt": "2026-09-09T05:45:06.619Z"
+    },
+    {
+      "id": "f4a230c8-ff37-49e9-bb79-b644c38f1d91",
+      "factAId": "27b0a058-0d02-4b3f-8c8e-64c43c3ef1b8",
+      "factBId": "b65a495f-b044-4a85-9ef4-690721e76577",
+      "relationshipType": "contradicts",
+      "confidence": 0.95,
+      "explanation": "Candidate 3 states that 75% of the directors on the board are non-executive independent directors. According to the source, there are 5 independent directors out of 11 total directors, which equals approximately 45.45% (or 8 out of 11 if combining nominee/independent, which would be ~72.7%), conflicting with the stated 75% metric.",
+      "similarityScore": 0.7067464061907168,
+      "createdAt": "2026-09-09T05:44:54.318Z"
+    },
+    {
+      "id": "8b603c21-17a8-4c2c-b66e-e9325b5492bb",
+      "factAId": "b65a495f-b044-4a85-9ef4-690721e76577",
+      "factBId": "e379a1cd-86e4-40be-8180-78bbc7824a1a",
+      "relationshipType": "contextual_explanation",
+      "confidence": 0.95,
+      "explanation": "Candidate 1 reports 9 board members as of March 31, 2024 (3 Executive and 6 Non-Executive Independent), whereas the source states 11 directors on the date of the Prospectus (3 Executive, 3 Non-Executive Nominee, and 5 Non-Executive Independent). This is a difference in the time period and date of composition, explaining the change in total count and breakdown.",
+      "similarityScore": 0.7761954023429835,
+      "createdAt": "2026-09-09T05:44:54.316Z"
+    },
+    {
+      "id": "aa539525-4367-439c-95e2-c63f32a20eb6",
+      "factAId": "2923dccc-7cc1-43bc-9cff-a8e717d13a9a",
+      "factBId": "b65a495f-b044-4a85-9ef4-690721e76577",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Both the source and candidate 0 state identical details regarding the Board composition as on the date of the Prospectus: 11 total directors comprising 3 Executive Directors, 3 Non-Executive Nominee Directors, and 5 Non-Executive Independent Directors, including one woman Director.",
+      "similarityScore": 1,
+      "createdAt": "2026-09-09T05:44:54.305Z"
+    },
+    {
+      "id": "ef3282cf-e617-4b43-a845-7e45ac8b8416",
+      "factAId": "2b9c59dd-ce0e-40e8-899b-2d96dc57ac27",
+      "factBId": "74093881-3c4f-4818-86e8-d6a417de416e",
+      "relationshipType": "corroborates",
+      "confidence": 1,
+      "explanation": "Candidate 0 states the exact same fact as the source, mentioning the same loan amount of ₹51.40 million availed and ₹25.00 million outstanding as of February 28, 2022 for Executive Director Sandeep Kumar Barasia.",
+      "similarityScore": 0.9994353137089671,
+      "createdAt": "2026-09-09T05:44:40.833Z"
     }
   ]
 }
